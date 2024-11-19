@@ -82,7 +82,7 @@ public interface ValueOperations<K, V> {
 	 * @param key must not be {@literal null}.
 	 * @param value must not be {@literal null}.
 	 * @return {@literal null} when used in pipeline / transaction.
-	 * @see <a href="https://redis.io/commands/setnx">Redis Documentation: SETNX</a>
+	 * @see <a href="https://redis.io/commands/setnx">Redis Documentation: SET</a>
 	 */
 	@Nullable
 	Boolean setIfAbsent(K key, V value);
